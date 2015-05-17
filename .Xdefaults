@@ -1,0 +1,35 @@
+urxvt*imLocale:en_US.utf8
+urxvt*depth:32
+urxvt*background:rgba:0000/0000/0000/dddd
+urxvt*foreground:white
+urxvt*underlineColor:cyan
+urxvt*buffered:false
+urxvt*inheritPixmap:false
+urxvt*transparent:true
+! Shading: 0..100 = darker -1..-100 = lighter
+urxvt*shading:10
+! Fading: higher number = darker shade on unfocus
+urxvt*fading:40
+urxvt*urlLauncher:uzbl
+urxvt*font:xft:Bitstream Vera Sans Mono:pixelsize=11:autohint=true
+urxvt*boldFont:xft:Bitstream Vera Sans Mono:bold:pixelsize=11:autohint=true
+urxvt*italicFont:xft:Bitstream Vera Sans Mono:bold:pixelsize=11:autohint=true
+urxvt*scrollStyle:xterm
+urxvt*scrollBar_right:true
+urxvt*scrollTtyOutput:false
+urxvt*scrollTtyKeypress:true
+urxvt*scrollWithBuffer:true
+urxvt*jumpScroll:false
+urxvt*saveLines:6400
+urxvt*borderLess:false
+urxvt*borderColor:black
+urxvt*scrollBar_floating:true
+!urxvt*internalBorder:4
+urxvt*tripleclickwords:true
+urxvt*perl-ext-common:default,matcher,remote-clipboard
+urxvt*keysym.M-u:perl:matcher:list
+urxvt*keysym.Control-Up:\033[1;5A
+urxvt*keysym.Control-Down:\033[1;5B
+urxvt*keysym.Control-Left:\033[1;5D
+urxvt*keysym.Control-Right:\033[1;5C
+

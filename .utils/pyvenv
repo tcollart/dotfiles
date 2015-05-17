@@ -1,0 +1,11 @@
+#!/usr/bin/zsh
+
+if [ "$#" -ne 1 ]; then
+    echo "Usage: pyvenv VENV_NAME"
+    exit 1
+fi
+
+pyvenv-3.4 --without-pip $1
+source $1/bin/activate
+curl -s https://bootstrap.pypa.io/get-pip.py | python3
+deactivate
