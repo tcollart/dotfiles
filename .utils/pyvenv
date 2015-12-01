@@ -1,5 +1,8 @@
 #!/usr/bin/zsh
 
+# A small hack to get pyvenv working on Ubuntu 14.04 trusty
+# (https://bugs.launchpad.net/ubuntu/+source/python3.4/+bug/1290847)
+
 if [ "$#" -ne 1 ]; then
     echo "Usage: pyvenv VENV_NAME"
     exit 1
