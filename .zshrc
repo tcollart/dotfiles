@@ -1,6 +1,6 @@
 # MAIN CONF
 ## Path to your oh-my-zsh installation.
-export ZSH=/home/job/.oh-my-zsh
+export ZSH=/home/tcollart/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 

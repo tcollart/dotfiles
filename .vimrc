@@ -15,7 +15,7 @@ set number
 set tabstop=4
 set autoindent
 set smartindent
-set colorcolumn=100
+"set colorcolumn=100
 set cursorline
 set showcmd
 set wildmenu
@@ -65,7 +65,7 @@ set smartcase
 " Add a ruler at 80 characters
 augroup BgHighlight
 	autocmd!
-	autocmd WinEnter * set colorcolumn=80
+	autocmd WinEnter * set colorcolumn=800
 	autocmd WinLeave * set colorcolumn=0
 augroup END
 
@@ -77,6 +77,8 @@ augroup END
 " Color scheme
 colorscheme gruvbox
 set background=dark
+
+let g:airline_theme='wombat'
 
 " WEB | JS | PHP
 autocmd FileType htmldjango,html,css,js,php,javascript set tabstop=2
@@ -97,6 +99,8 @@ set ffs=unix,dos
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
+
+let g:jsx_ext_required = 0
 nnoremap <c-l> <c-w>l
 
 " hjkl
@@ -130,7 +134,7 @@ set wildignore+=*.orig "Merge resolution files"
 let g:pymode_rope_complete_on_dot = 0
 
 " NERDTree
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['node_modules', '\.pyc$']
 
 " CtrlP settings
 let g:ctrlp_match_window = 'bottom,order:ttb'
@@ -183,3 +187,5 @@ set writebackup
 " let g:user_emmet_install_global = 1
 "autocmd FileType htmldjango,html,php,jsx EmmetInstall
 "let g:user_emmet_expandabbr_key = '<silent> <Leader>e'
+"
+"

@@ -1,0 +1,37 @@
+[global_config]
+  window_state = hidden
+  handle_size = 0
+  title_transmit_fg_color = "#ebdbb2"
+  geometry_hinting = False
+  title_inactive_fg_color = "#a89984"
+  suppress_multiple_term_dialog = True
+  borderless = True
+  title_receive_bg_color = "#282828"
+  title_transmit_bg_color = "#282828"
+  title_receive_fg_color = "#ebdbb2"
+  tab_position = hidden
+  inactive_color_offset = 0.99
+  title_inactive_bg_color = "#282828"
+[keybindings]
+[profiles]
+  [[default]]
+    scrollbar_position = hidden
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    font = Fira Sans Thin 11
+    background_darkness = 0.92
+    background_image = None
+    foreground_color = "#a89984"
+    icon_bell = False
+    copy_on_selection = True
+    background_color = "#282828"
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
