@@ -1,4 +1,5 @@
 set nocompatible " be iMproved, required
+set t_Co=256
 
 " Pathogen load
 filetype off
@@ -96,12 +97,14 @@ autocmd FileType python,ruby,coffee set expandtab
 set ffs=unix,dos
 
 " Move around splits with <c-hjkl>
+nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-
-let g:jsx_ext_required = 0
 nnoremap <c-l> <c-w>l
+
+" Allows jsx syntax in js files
+let g:javascript_enable_domhtmlcss=1
+let g:jsx_ext_required = 0
 
 " hjkl
 nnoremap <up> <nop>
